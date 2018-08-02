@@ -37,3 +37,6 @@ sess = tf.InteractiveSession()
 writer = tf.summary.FileWriter('/tmp/summary/mnist', sess.graph)
 tf.global_variables_initializer().run()
 writer.close()
+
+# Finally you can execute linux command in shell
+#   tensorboard --logdir=/tmp/summary/mnist
